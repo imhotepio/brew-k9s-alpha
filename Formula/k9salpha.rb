@@ -5,20 +5,20 @@
 class K9salpha < Formula
   desc "Kubernetes CLI To Manage Your Clusters In Style!"
   homepage "https://k9salpha.io/"
-  version "1.0.0-rc1"
+  version "1.0.0-rc.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/imhotepio/k9salpha/releases/download/v1.0.0-rc1/k9salpha_Darwin_x86_64.tar.gz"
-    sha256 "04f49238198e870a6bdf25786d2a6fb4f0dafe767e9320f64c1917d0f70e2e8b"
+    url "https://github.com/imhotepio/k9salpha/releases/download/v1.0.0-rc.0/k9salpha_Darwin_x86_64.tar.gz"
+    sha256 "0a6a4a7969c63172c93e5e3909483adfe34727852b957c2c0f8ac01f4435f242"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/imhotepio/k9salpha/releases/download/v1.0.0-rc1/k9salpha_Linux_x86_64.tar.gz"
-    sha256 "1c742415f792049ca0cef495a3c2f7cce6c888422455e67ad6bfdfebb2b93468"
+    url "https://github.com/imhotepio/k9salpha/releases/download/v1.0.0-rc.0/k9salpha_Linux_x86_64.tar.gz"
+    sha256 "36e05b76944c80f343727c262e40418839b2bf5d660d5bbaa88aaceb48446967"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/imhotepio/k9salpha/releases/download/v1.0.0-rc1/k9salpha_Linux_arm64.tar.gz"
-    sha256 "ac44466db642c52f03eee3691f7d2174c34e221d3c2b91372046e160644cecb9"
+    url "https://github.com/imhotepio/k9salpha/releases/download/v1.0.0-rc.0/k9salpha_Linux_arm64.tar.gz"
+    sha256 "75cc0f1389edd5274cca4c1059760ee899ec20b680d8490138717d08e79a045c"
   end
 
   def install
