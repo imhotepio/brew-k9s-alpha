@@ -10,15 +10,15 @@ class K9salpha < Formula
 
   if OS.mac?
     url "https://github.com/imhotepio/k9salpha/releases/download/v1.0.0-rc.0/k9salpha_Darwin_x86_64.tar.gz"
-    sha256 "5b3f299e1eb7e5a7e0368d0f1bbe8460727a7c957c6b1fbd91b074db8165c1e6"
+    sha256 "334225f8b07d955404233b4ef43fa5cc0ff38aa6d77712e81af8a1bc55c6f5cf"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/imhotepio/k9salpha/releases/download/v1.0.0-rc.0/k9salpha_Linux_x86_64.tar.gz"
-    sha256 "35feadedd3f7517daaac0747cbbc5d41ce5edde12145722c18b4a59d8dbb78e5"
+    sha256 "153c2f2ba5f63c59180f88834121dd76e1efd2d3d2855d3ec9794385f3601cc5"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/imhotepio/k9salpha/releases/download/v1.0.0-rc.0/k9salpha_Linux_arm64.tar.gz"
-    sha256 "4d323e11065bc3cf8577d9c69ecd4c51520963788b9453f31ee7437560e4be19"
+    sha256 "ec5c3c5adfaf2e2f58c237b8ff82dd297d6967a90cbc1b6fca4c6f76154b5e00"
   end
 
   def install
