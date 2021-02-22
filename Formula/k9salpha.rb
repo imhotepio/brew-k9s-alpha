@@ -8,17 +8,17 @@ class K9salpha < Formula
   version "1.0.0-rc.0"
   bottle :unneeded
 
-  if OS.mac?
+  if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/imhotepio/k9salpha/releases/download/v1.0.0-rc.0/k9salpha_Darwin_x86_64.tar.gz"
-    sha256 "334225f8b07d955404233b4ef43fa5cc0ff38aa6d77712e81af8a1bc55c6f5cf"
+    sha256 "6dcfdc928746054fc7d21bc0e1df7cb6aac17aa10285c9a206c45f8662169d1a"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/imhotepio/k9salpha/releases/download/v1.0.0-rc.0/k9salpha_Linux_x86_64.tar.gz"
-    sha256 "153c2f2ba5f63c59180f88834121dd76e1efd2d3d2855d3ec9794385f3601cc5"
+    sha256 "03ed3caa67aa4dda8e28465ec343d845ac28b1bd02f8c9334e720f22ee53183c"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/imhotepio/k9salpha/releases/download/v1.0.0-rc.0/k9salpha_Linux_arm64.tar.gz"
-    sha256 "ec5c3c5adfaf2e2f58c237b8ff82dd297d6967a90cbc1b6fca4c6f76154b5e00"
+    sha256 "17e1091b260a2fb9a8877ab009f4da3e758983ef9cf0c311af46418fca2a9b19"
   end
 
   def install
