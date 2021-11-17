@@ -6,7 +6,6 @@ class K9salpha < Formula
   desc "Kubernetes CLI To Manage Your Clusters In Style!"
   homepage "https://k9salpha.io/"
   version "1.0.0-rc.2"
-  bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/imhotepio/k9salpha/releases/download/v1.0.0-rc.2/k9salpha_Darwin_x86_64.tar.gz"
